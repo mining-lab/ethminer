@@ -5,7 +5,7 @@ WORKDIR /opt/ethminer
 RUN apt-get update && \
   apt-get install -y --no-install-recommends wget ca-certificates libcurl4-openssl-dev && \
   rm -rf /var/lib/apt/lists/* && \
-  wget -O - 'https://github.com/ethereum-mining/ethminer/releases/download/v0.16.2/ethminer-0.16.2-linux-x86_64.tar.gz' | tar zxvf - --strip=1
+  wget -O - 'https://github.com/ethereum-mining/ethminer/releases/download/v0.17.0/ethminer-0.17.0-linux-x86_64.tar.gz' | tar zxvf - --strip=1
 
 ENV GPU_FORCE_64BIT_PTR=0
 ENV GPU_MAX_HEAP_SIZE=100

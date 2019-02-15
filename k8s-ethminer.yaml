@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: ethminer
-          image: quay.io/cloud/ethminer:v0.16.1
+          image: quay.io/mats16/ethminer:v0.16.1
           imagePullPolicy: Always
           command: ["./ethminer"]
           args: ["--cuda", "--farm-recheck", "200", "-R", "stratum://$(ETH_WALLET).$(WORKER_NAME)@$(ETH_POOL_HOST)"]
